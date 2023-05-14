@@ -1,0 +1,118 @@
+body{
+    font-family:'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: radial-gradient(circle, rgba(147,41,87,1) 0%, rgba(30,70,117,1) 100%);
+}
+
+body.modo-escuro{
+    background: #212121;
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    height: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background : none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+} 
+
+main {
+    padding: 25px;
+}
+
+.listagem-pokemon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.modo-escuro .cartao-pokemon{
+    background: #5f5656;
+}
+
+.cartao-pokemon{
+    background: radial-gradient(circle, rgb(245, 245, 245) 0%, rgb(0, 99, 230) 100%);
+    gap: 15px;
+    padding: 15px;
+    border-radius: 25px;
+    flex-direction: column;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+
+main .informacoes span{
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 17px;
+}
+
+main .informacoes{
+    justify-content: space-between;
+    border: 1px solid rgb(53, 42, 44);
+    display: flex;
+    border-radius: 10px;
+}
+
+.gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .tipo{
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.grama{
+    background-color:#7ac74c;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.veneno{
+    background-color: #df67ddfb;
+}
+
+.agua{
+    background-color: #6390f0; 
+}
+
+.inseto{
+    background-color: #a6b91a;
+}
+
+.descricao{
+    font-size: 14px;
+    overflow-y: scroll;
+    max-height: 80px;
+    padding-right: 10px;
+}
